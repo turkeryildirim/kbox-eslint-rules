@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/turkeryildirim/kbox-eslint-rules/compare/v1.0.0...v1.0.1) (2026-01-30)
+
+
+### Bug Fixes
+
+* semantic-release ([a9857fb](https://github.com/turkeryildirim/kbox-eslint-rules/commit/a9857fb4e043a089f50dda361664b65a622cfb99))
+
 # Changelog
 
 All notable changes to this project will be documented in this file.
