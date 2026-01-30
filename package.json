@@ -1,0 +1,73 @@
+{
+  "name": "kbox-eslint-rules",
+  "version": "1.0.0",
+  "description": "Shared ESLint configuration for kbox projects",
+  "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "default": "./index.js"
+    },
+    "./next": {
+      "import": "./next.js",
+      "default": "./next.js"
+    },
+    "./configs/recommended": {
+      "import": "./index.js",
+      "default": "./index.js"
+    },
+    "./configs/next": {
+      "import": "./next.js",
+      "default": "./next.js"
+    }
+  },
+  "files": [
+    "index.js",
+    "next.js",
+    "README.md",
+    "QUICKSTART.md",
+    "CHANGELOG.md",
+    "examples"
+  ],
+  "scripts": {
+    "prepublishOnly": "echo '⚠️  Make sure you have updated the version and CHANGELOG.md before publishing!'",
+    "version": "echo 'Version updated successfully'",
+    "postversion": "git push && git push --tags"
+  },
+  "keywords": [
+    "lint",
+    "eslint",
+    "eslintconfig",
+    "kbox",
+    "typescript",
+    "config",
+    "prettier",
+    "nextjs",
+    "import-order",
+    "shareable-config"
+  ],
+  "author": "Değişken Yazılım <degiskenyazilim@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint-config-prettier": "^10.0.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-typescript": "^4.0.0",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-unused-imports": "^4.0.0",
+    "prettier": "^3.0.0"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^16.0.0"
+  }
+}

@@ -1,0 +1,31 @@
+# Node.js
+node_modules/
+
+# Git files
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+
+# Test files
+test/
+*.test.js
+*.spec.js
+
+# Config files
+.editorconfig
+.prettierrc
+.eslintrc*
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+
+# Documentation (we want to keep README.md)
+docs/
+
+# Misc
+*.log
+.DS_Store
